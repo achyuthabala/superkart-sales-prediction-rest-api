@@ -111,6 +111,6 @@ def predict_sales_batch():
 if __name__ == '__main__':
     superkart_sales_predictor_api.run(
         host='0.0.0.0',
-        port=5001,
+        port=7860,
         debug=True
     )
