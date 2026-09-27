@@ -11,7 +11,7 @@ COPY . .
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
 # Expose Flask API port
-EXPOSE 5001
+EXPOSE 7860
 
 # Start Flask API using Gunicorn
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5001", "app:superkart_sales_predictor_api"]
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:7860", "app:superkart_sales_predictor_api"]
